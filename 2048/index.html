@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  <div class="top-bar">
+    <button class="theme-toggle" onclick="cycleTheme()">🐶 Tema Değiştir</button>
+
+  </div class="image-container">
+
+   <img class="sr1" alt="yaga" src="./image/sahur.jpg" id="s1">
+   <audio class="sahurr" src="./audio/sahur1000x.mp3" preload="auto"></audio>
+
+  <img class="sr2" alt="yaga" src="./image/sahur2.jpg" id="s2">
+  <audio class="sahurr" src="./audio/sahur1000x.mp3" preload="auto"></audio>
+
+  <img class="sr3" alt="yaga2" src="./image/sahur3.jpg" id="s3">
+  <audio class="sahurr" src="./audio/sahur1000x.mp3" preload="auto"></audio>
+
+  <img class="sr4" alt="yaga3" src="./image/sahur4.jpg" id="s4">
+  <audio class="sahurr" src="./audio/sahur1000x.mp3" preload="auto"></audio>
+
+  <img class="sr5" alt="yaga4" src="./image/sahur5.jpg" id="s5">
+  <audio class="sahurr" src="./audio/sahur1000x.mp3" preload="auto"></audio>
+
+  <img class="sr6" alt="yaga5" src="./image/sahur6.jpg" id="s6">
+  <audio class="sahurr" src="./audio/sahur1000x.mp3" preload="auto"></audio>
+
+  <img class="sr7" alt="yaga6" src="./image/sahur7.jpg" id="s7">
+  <audio class="sahurr" src="./audio/sahur1000x.mp3" preload="auto"></audio>
+
+  <img class="sr8" alt="yaga7" src="./image/sahur8.jpg" id="s8">
+  <audio class="sahurr" src="./audio/sahur1000x.mp3" preload="auto"></audio>
+
+  <img class="sry" alt="yaga8" src="./image/sahury.jpg" id="sy">
+  <audio class="sahurr" src="./audio/sahur1000x.mp3" preload="auto"></audio>
+
+  <img class="srg" alt="yaga9" src="./image/sahurg.jpg" id="sg">
+  <audio class="sahurr" src="./audio/sahur1000x.mp3" preload="auto"></audio>
+
+  <img class="sry2" alt="yagax" src="./image/sy2.jpg" id="sy2">
+  <audio class="sahurr" src="./audio/sahur1000x.mp3" preload="auto"></audio>
+
+  <img class="srg2" alt="yagay" src="./image/sg2.jpg" id="sg2">
+  <audio class="sahurr" src="./audio/sahur1000x.mp3" preload="auto"></audio>
+
+
+
+  <div class="game" id="game"></div>
+
+
+    <div class="game-container">
+        <h1>2048</h1>
+        <div id="score">Puan: 0</div>
+        <div id="grid-container" class="grid-container"></div>
+        <div id="game-over-message" class="game-over-message">
+            Kaybettiniz!
+            <button id="restart" class="retry-button">Yeniden Oyna</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
