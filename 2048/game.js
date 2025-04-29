@@ -80,7 +80,7 @@ function renderBoard() {
             gridContainer.appendChild(cell);
         }
     }
-    scoreDisplay.textContent = 'Puan: ' + score;
+    scoreDisplay.textContent = 'Puan : ' + score;
 }
 
 
@@ -243,13 +243,26 @@ function startTimer() {
 }
 
 function updateTimerDisplay(elapsedTime) {
-    // Geçen süreyi ekranda göster
+    
     let minutes = Math.floor(elapsedTime / 60); 
     let seconds = elapsedTime % 60; 
     document.getElementById("timerDisplay").innerText = `Geçen Süre: ${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
 }
 
-startTimer();
+startTimer(); 
+
+
+
+
+
+document.getElementById("highScoreDisplay").innerText = `Max Skor: ${score}`;
+
+
+
+
+
+
+
 
 
 
