@@ -233,4 +233,23 @@ image.addEventListener('click', () => {
     }
 });
 
+let startTime = Date.now(); 
+
+function startTimer() {
+    setInterval(function() {
+        let elapsedTime = Math.floor((Date.now() - startTime) / 1000); 
+        updateTimerDisplay(elapsedTime); 
+    }, 1000); 
+}
+
+function updateTimerDisplay(elapsedTime) {
+    // Geçen süreyi ekranda göster
+    let minutes = Math.floor(elapsedTime / 60); 
+    let seconds = elapsedTime % 60; 
+    document.getElementById("timerDisplay").innerText = `Geçen Süre: ${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+}
+
+startTimer();
+
+
 
